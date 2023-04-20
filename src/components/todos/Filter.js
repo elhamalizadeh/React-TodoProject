@@ -9,9 +9,9 @@ const FilterTodos = () => {
     }
 
     return(
-        <div class="col-md-3 mb-3">
+        <div className="col-md-3 mb-3">
             <h2>Filter:</h2>
-            <select onChange={(e) => handleFilter(e)} class="form-select">
+            <select onChange={(e) => handleFilter(e)} className="form-select">
             <option value="100">all</option>
             <option value="5">5</option>
             <option value="20">20</option>

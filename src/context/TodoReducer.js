@@ -12,6 +12,12 @@
                 todos: action.payload
             };
 
+            case "SET_CREATE_TODO":
+                return {
+                    ...state,
+                    todos: [action.payload , ...state.todos]
+                };
+
         case "SET_ERROR":
             return {
                 ...state,
